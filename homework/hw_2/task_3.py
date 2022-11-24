@@ -4,6 +4,6 @@ number = int(input('введите число n: '))
 glos = {i : round((1 + 1 / i) **i, 2) for i in range(1, number+1)}
 print(glos)
 summa = 0
-for i in glos:
-    summa += i
+for i in glos.keys():
+    summa += glos.get(i)
 print(f'сумма: {summa}')
