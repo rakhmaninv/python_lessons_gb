@@ -2,9 +2,6 @@ import csv
 import json
 
 
-
-
-
 def get_data():
     with open('homework\hw_8\data\data.csv', 'r', encoding='utf-8-sig') as f:
         data = list(csv.DictReader(f))

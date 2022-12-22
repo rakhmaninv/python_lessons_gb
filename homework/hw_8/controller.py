@@ -35,7 +35,7 @@ def start():
                 m.export_to_json(data, keys, v.user_input('введите имя файла'))
 
             case 8: #export csv
-                m.save_data_csv(data, v.user_input('введите имя файла'))
+                m.save_data_csv(data, keys, v.user_input('введите имя файла'))
 
             case 9: #close
                 run = False
